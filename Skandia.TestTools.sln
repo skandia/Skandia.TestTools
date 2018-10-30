@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skandia.TestTools.Xunit.DataSource.TestCase", "Skandia.TestTools.Xunit.DataSource.TestCase\Skandia.TestTools.Xunit.DataSource.TestCase.csproj", "{198281FF-A565-4E01-8AE7-969D174F7F06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTest-Core21", "XUnitTestProject1\XUnitTest-Core21.csproj", "{1C5BF6B1-399A-4B82-8DC9-F9A9D2FBC036}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{48B70EB2-9BC8-4B42-9869-A47E386DF8FB}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{198281FF-A565-4E01-8AE7-969D174F7F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{198281FF-A565-4E01-8AE7-969D174F7F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{198281FF-A565-4E01-8AE7-969D174F7F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{198281FF-A565-4E01-8AE7-969D174F7F06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C5BF6B1-399A-4B82-8DC9-F9A9D2FBC036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5BF6B1-399A-4B82-8DC9-F9A9D2FBC036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5BF6B1-399A-4B82-8DC9-F9A9D2FBC036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5BF6B1-399A-4B82-8DC9-F9A9D2FBC036}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AC945E2-F7DD-4C2C-80C8-D17689C9DF98}
+	EndGlobalSection
+EndGlobal
