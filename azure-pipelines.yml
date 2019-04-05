@@ -15,12 +15,12 @@ steps:
   displayName: 'Prepare analysis on SonarCloud'
   inputs:
     SonarCloud: 'Skandia-SonarCloud'
-    projectKey: $(SonarcloudKey)
+    organization: skandia
+    projectKey: '$(SonarcloudKey)'  
     projectName: MigrationPlayground
-    projectVersion: '$(AssemblyVersion)'
-    extraProperties: |
-     sonar.organization=skandia
-     sonar.branch.name=$(Build.SourceBranchName)
+    #projectVersion: '$(AssemblyVersion)'
+    #extraProperties: |
+    # sonar.branch.name=$(Build.SourceBranchName)
     
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
