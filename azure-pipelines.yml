@@ -11,25 +11,25 @@ variables:
 
 steps:
 
-#- task: SonarSource.sonarcloud.14d9cde6-c1da-4d55-aa01-2965cd301255.SonarCloudPrepare@1
-#  displayName: 'Prepare analysis on SonarCloud'
-#  inputs:
-#    SonarQube: 'SonarCloud'
-#    projectKey: $(SonarcloudKey)
-#    projectName: MigrationPlayground
-#    projectVersion: '$(AssemblyVersion)'
-#    extraProperties: |
-#     sonar.organization=skandia
-#     sonar.branch.name=$(Build.SourceBranchName)
+- task: SonarSource.sonarcloud.14d9cde6-c1da-4d55-aa01-2965cd301255.SonarCloudPrepare@1
+  displayName: 'Prepare analysis on SonarCloud'
+  inputs:
+    SonarQube: 'Skandia-SonarCloud'
+    projectKey: $(SonarcloudKey)
+    projectName: MigrationPlayground
+    projectVersion: '$(AssemblyVersion)'
+    extraProperties: |
+     sonar.organization=skandia
+     sonar.branch.name=$(Build.SourceBranchName)
     
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
   
-- script: dotnet test --configuration $(buildConfiguration)
-  displayName: 'dotnet test $(buildConfiguration)'
+#- script: dotnet test --configuration $(buildConfiguration)
+"  displayName: 'dotnet test $(buildConfiguration)'
  
-#- task: SonarSource.sonarcloud.ce096e50-6155-4de8-8800-4221aaeed4a1.SonarCloudAnalyze@1
-#  displayName: 'Run Code Analysis'
+- task: SonarSource.sonarcloud.ce096e50-6155-4de8-8800-4221aaeed4a1.SonarCloudAnalyze@1
+  displayName: 'Run Code Analysis'
 
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
