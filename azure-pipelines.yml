@@ -17,11 +17,9 @@ steps:
     SonarCloud: 'Skandia-SonarCloud'
     organization: skandia
     projectKey: '$(SonarcloudKey)'  
-    projectName: MigrationPlayground
+    projectName: Skandia.TestTools
     #projectVersion: '$(AssemblyVersion)'
-    #extraProperties: |
-    # sonar.branch.name=$(Build.SourceBranchName)
-    
+  
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
   
