@@ -16,7 +16,7 @@ steps:
   inputs:
     SonarCloud: 'Skandia-SonarCloud'
     organization: skandia
-    projectKey: '$(SonarcloudKey)'  
+    projectKey: Skandia.TestTools  
     projectName: Skandia.TestTools
     #projectVersion: '$(AssemblyVersion)'
   
